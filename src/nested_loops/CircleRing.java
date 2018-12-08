@@ -4,13 +4,16 @@ package nested_loops;
  *    Level 0
  */
 
+import java.awt.peer.RobotPeer;
+
 import org.jointheleague.graphical.robot.Robot;
 
 public class CircleRing {
     public static void main(String[] args) throws Exception {
 
         // 1. Make a new Robot
-
+    new Robot("Abcdefghijklmnopqrstuvwxyz");
+   
 
        //  2. Set your robot’s position to x=150 and y=200
 

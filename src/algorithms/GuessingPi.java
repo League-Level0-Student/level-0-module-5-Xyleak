@@ -7,14 +7,26 @@ package algorithms;
 import javax.swing.JOptionPane;
 
 public class GuessingPi {
-	// 1. Make a main method and make sure your program can run
-
-		// 2. Make a String variable to hold the value of Pi.
+	
+	public static void main(String[] args) {
+		
+	
+	// (Oh Ok) 1. Make a main method and make sure your program can run
+		// (Oh Ok) 2. Make a String variable to hold the value of Pi.
 		//    Get the first few digits from http://www.piday.org/million/.
 
-		// 3. Print out the first 3 digits of Pi to the console.
-		//    The first value is "pi.charAt(0)", the second is "pi.charAt(1)", etc.
-		//    Run your program to see how this works.
+		
+		String Pi = "3.141592653589793238462643";
+		System.out.println(Pi);
+		
+		// 3. (Oh Ok) Print out the first 3 digits of Pi to the console.
+				//    The first value is "pi.charAt(0)", the second is "pi.charAt(1)", etc.
+				//    Run your program to see how this works.
+       for (int i = 0; i < 4; i++) {
+		  System.out.println(Pi.charAt(i));
+       }
+	
+		
 
 		// 9. If you want to give the user more than one chance to guess,
 		//    put a for loop around steps 4-8.
@@ -22,9 +34,20 @@ public class GuessingPi {
 			// 4. Create a for loop that will step through each digit of pi (steps 5-8)
 			//    NOTE: The number of digits in your string will be
 			//       yourStringVariable.length()
-
-				// 5. Ask the user for the NEXT digit of pi.
-
+       for (int i = 0; i < Pi.length(); i++) {
+ 		  System.out.println(Pi.charAt(i));
+        }
+		// 5. Ask the user for the NEXT digit of pi.
+       for(int i=0;;){
+    	   String User = JOptionPane.showInputDialog("What is the next digit for pi?");
+    	   if( User.equals(Pi.substring(4,5))){
+    		   System.out.println("correct");
+    		   break;
+    	   }
+    	   else{
+    	       System.out.println("Not correct");
+    	 
+    	   }
 				// 6. Compare the user's input to the next digit of your pi variable 
 				//    (look at step 3 for a clue).
 				//    HINT: use charAt(0) to get 1st char of user input String 
@@ -33,7 +56,8 @@ public class GuessingPi {
 
 					// 8. If they are not, print out "incorrect" and tell them
 					//    to start over. Use 'break;' to break out of the loop.
+       }
+
 
 }
-
-
+}
