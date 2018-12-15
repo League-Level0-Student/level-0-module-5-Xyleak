@@ -17,14 +17,14 @@ public class GuessingPi {
 
 		
 		String Pi = "3.141592653589793238462643";
-		System.out.println(Pi);
+		System.out.println(Pi.charAt(0));
+		System.out.println(Pi.charAt(1));
+		System.out.println(Pi.charAt(2));
 		
 		// 3. (Oh Ok) Print out the first 3 digits of Pi to the console.
 				//    The first value is "pi.charAt(0)", the second is "pi.charAt(1)", etc.
 				//    Run your program to see how this works.
-       for (int i = 0; i < 4; i++) {
-		  System.out.println(Pi.charAt(i));
-       }
+       
 	
 		
 
@@ -34,18 +34,19 @@ public class GuessingPi {
 			// 4. Create a for loop that will step through each digit of pi (steps 5-8)
 			//    NOTE: The number of digits in your string will be
 			//       yourStringVariable.length()
-       for (int i = 0; i < Pi.length(); i++) {
- 		  System.out.println(Pi.charAt(i));
-        }
+ 	
+  
 		// 5. Ask the user for the NEXT digit of pi.
-       for(int i=0;;){
+	for (int i = 0; i < Pi.length(); i++) {
+		
+
     	   String User = JOptionPane.showInputDialog("What is the next digit for pi?");
-    	   if( User.equals(Pi.substring(4,5))){
+    	   if( User.equals(Pi.charAt(i)+"")){
     		   System.out.println("correct");
-    		   break;
+    		   
     	   }
     	   else{
-    	       System.out.println("Not correct");
+    	       System.out.println("Not correct. Start Over Again"); break;
     	 
     	   }
 				// 6. Compare the user's input to the next digit of your pi variable 
@@ -53,11 +54,11 @@ public class GuessingPi {
 				//    HINT: use charAt(0) to get 1st char of user input String 
 
 					// 7. If they are correct, print out "correct".
-
+	}
 					// 8. If they are not, print out "incorrect" and tell them
 					//    to start over. Use 'break;' to break out of the loop.
        }
 
 
 }
-}
+
