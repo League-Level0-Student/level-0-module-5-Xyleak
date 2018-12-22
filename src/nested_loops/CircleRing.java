@@ -20,7 +20,7 @@ public class CircleRing {
         // 3. Put the robot's pen down
         xy.penDown();
         // 4. Set the robot’s speed to 10
-         xy.setSpeed(100);
+         xy.setSpeed(999999999);
        			
         // 5. Do everything below here 360 times (use i as the counter)
          
