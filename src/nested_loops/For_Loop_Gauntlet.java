@@ -53,36 +53,28 @@ public class For_Loop_Gauntlet {
 
 			}
 		}
-
+	
 		// Nested For-Loops 2
 
-		// 1
+		// 2
 		System.out.println("2 Nested-----------");
-		for (int i = 1; i < 4; i++) {
-			System.out.print(i + " ");
+	
+	for(int i=0; i<3; i+=3) {
+	   for(int j=0; j<3;j++) {
+		   System.out.println(3*j+i+1);
+	   }
+	  }
+	// Nested For-Loops 3
 
-			if (i % 3 == 0) {
-				System.out.println();
-				for (int j = 1; j <= 9; j += 3) {
+			// 3
+	for(int i=0; i<3 i+=3);
+	
+	// Nested For-Loops 4
 
-					System.out.print(j + " ");
-
-					for (int j2 = 1; j2 <= j + 10; j2++) {
-						System.out.println(j + " ");
-
-					}
-					System.out.println();
-				}
-
-			}
-		}
-
-		// Nested For-Loops 3
-
-		for (int i = 1; i < 11; i++) {
-			System.out.print(i + " ");
-
-		}
-
+			// 4
+	for(int i=1;i<=6;i++) {
 	}
-}
+	}
+	
+	 }
+	}
