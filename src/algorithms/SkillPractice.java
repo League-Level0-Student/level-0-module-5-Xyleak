@@ -3,8 +3,11 @@ package algorithms;
 import java.awt.Image;
 import java.util.Random;
 
+import javax.imageio.stream.ImageInputStreamImpl;
 import javax.swing.JOptionPane;
 import javax.swing.Popup;
+import javax.swing.event.PopupMenuEvent;
+import javax.swing.plaf.metal.MetalBorders.PopupMenuBorder;
 
 public class SkillPractice {
 	
@@ -14,6 +17,7 @@ public static void main(String[] args){
 	skills.skill2();
 	skills.skill3();
 	skills.skill4();
+	skills.skill5(); 
 }
 
 void skill1() {
@@ -49,19 +53,40 @@ String c = JOptionPane.showInputDialog("What City Do You Live In?");
 if(c.equals("San Diego")){ 
 	JOptionPane.showMessageDialog(null, "You Live In One Of The Greatest Cities IN THE WORLD!");
 }
-else{JOptionPane.showMessageDialog(null, c+" Is The Worst City");
+else{JOptionPane.showMessageDialog(null, c+" = The Worst");
   	
 }
 String ca = JOptionPane.showInputDialog("How Many Cars Do You Have?");
+int car = Integer.parseInt(ca)*4;
 int int_ca=Integer.parseInt(ca);
 if(int_ca == 0) {
 	JOptionPane.showMessageDialog(null, "I Bet You Use Public Transportation");
 }
 else if(int_ca == 1) {
-	JOptionPane.showMessageDialog(null, "Oh Ok");
-	//Image = https://www.google.com/search?biw=843&bih=942&tbm=isch&sa=1&ei=fwBWXKm3IMu1tgWihLTQAw&q=working+carboard+car&oq=working+carboard+car&gs_l=img.3...48672.53959..54206...3.0..0.279.2305.18j3j2......0....1..gws-wiz-img.......0j0i67j0i10i24j0i8i30.7_J2joFeM_g#imgdii=Gp1ABKI0KRzQsM:&imgrc=V5IFaizb4_qc2M:
+String cc =	JOptionPane.showInputDialog(null, "What Model Is Your Car");
+	JOptionPane.showMessageDialog(null,cc+ " Has Four Wheels");
+	
 }
-//Image = https://www.google.com/search?biw=843&bih=942&tbm=isch&sa=1&ei=tgBWXMK7Dce7tgWG8YKQDQ&q=weird+cars&oq=wierd+car&gs_l=img.1.0.0i10l10.326000.331503..332351...1.0..0.241.1037.9j1j1......0....1..gws-wiz-img.....0..0j0i67j0i10i67j0i10i24.QMKHZ1vYclU#imgrc=rRHBSxan3_ukBM:
+else if(int_ca>1) {
+String ccc = JOptionPane.showInputDialog("What Model is Your Car");	
+JOptionPane.showMessageDialog(null,"Your Total Number Of Wheels On Your Cars Equal Up To... " +car+ " Wheels");
+}
+else {
+	
+}
+//Image:  https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjq-Pmhu6_gAhVNC6wKHbPzBLEQjRx6BAgBEAU&url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fphotoshopbattles%2Fcomments%2F3juf5c%2Fpsbattle_mr_bean_driving_his_car_like_a_pro%2F&psig=AOvVaw37Dxk8gusV28PmRg_HUUn_&ust=1549829567631910
+}
 
-}
+
+void skill5() {
+	String Sck00le = JOptionPane.showInputDialog("wH4t Skc0oOo0l3ee3e D0 y0u aTt3nD");
+	JOptionPane.showMessageDialog(null, "hMmmmM Y0u g0 to "+Sck00le+  "?" );
+	JOptionPane.showMessageDialog(null, "YoU aR3 a cOol m1n3cr4ft G4m3r"+Sck00le+ " 1S Th3 b3St Sko0l3 F0R c00000l  M1neCr4afT k1ds ");
+	
+	
+	
+}	
+
+
+
 }
